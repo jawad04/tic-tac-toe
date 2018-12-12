@@ -50,3 +50,11 @@ function win(player) {
     return false;
 }
 
+function tie() {
+    for (var i = 1; i <= Object.keys(board).length; i++) {
+        if (board[i] === ' ') {
+            return false;
+        }
+    }
+    return true;
+}
